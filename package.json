@@ -1,0 +1,18 @@
+{
+  "name": "rev-cli",
+  "version": "1.0.0",
+  "description": "rev-cli is a CLI tool for working with remote repositories.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Re_Tteotw",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^5.5.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@rev-cli/utils",
+  "version": "1.0.0",
+  "description": "rev-cli/utils provides a CLI interface for rev-cli operations",
+  "author": "Rivenaa <347153785@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/utils.test.js"
+  }
+}
