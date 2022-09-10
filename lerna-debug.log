@@ -6,11 +6,11 @@
 0 silly argv }
 1 notice cli v5.5.0
 2 verbose rootPath C:\Users\34715\Desktop\rev-cli
-3 verbose session f2585ef1ec95ecf8
+3 verbose session 4e3668c2073e06ec
 4 verbose user-agent lerna/5.5.0/node@v16.14.2+x64 (win32)
 5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '5.5.0' }
 6 verbose rootPath C:\Users\34715\Desktop\rev-cli
-7 info current version 1.0.0
+7 info current version 1.0.1
 8 silly isAnythingCommitted
 9 verbose isAnythingCommitted 1
 10 silly getCurrentBranch
@@ -20,7 +20,7 @@
 14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
 15 silly hasTags
 16 verbose hasTags true
-17 silly git-describe.sync "v1.0.2-1-g9ac036d" => {"lastTagName":"v1.0.2","lastVersion":"v1.0.2","refCount":"1","sha":"9ac036d","isDirty":false}
+17 silly git-describe.sync "v1.0.2-3-ge991c3c" => {"lastTagName":"v1.0.2","lastVersion":"v1.0.2","refCount":"3","sha":"e991c3c","isDirty":false}
 18 info Looking for changed packages since v1.0.2
 19 silly checking diff packages/core
 20 silly found diff in packages/core/package.json
@@ -30,28 +30,28 @@
 24 verbose filtered diff [ 'packages/utils/package.json' ]
 25 verbose updated @rev-cli/core
 26 verbose updated @rev-cli/utils
-27 verbose git-describe undefined => "v1.0.2-1-g9ac036d"
-28 silly git-describe parsed => {"lastTagName":"v1.0.2","lastVersion":"v1.0.2","refCount":"1","sha":"9ac036d","isDirty":false}
+27 verbose git-describe undefined => "v1.0.2-3-ge991c3c"
+28 silly git-describe parsed => {"lastTagName":"v1.0.2","lastVersion":"v1.0.2","refCount":"3","sha":"e991c3c","isDirty":false}
 29 info execute Skipping releases
 30 silly lifecycle No script for "preversion" in "rev-cli", continuing
 31 silly lifecycle No script for "preversion" in "@rev-cli/core", continuing
 32 silly lifecycle No script for "preversion" in "@rev-cli/utils", continuing
 33 verbose version @rev-cli/utils has no lockfile. Skipping lockfile update.
 34 verbose version @rev-cli/core has no lockfile. Skipping lockfile update.
-35 silly lifecycle No script for "version" in "@rev-cli/core", continuing
-36 silly lifecycle No script for "version" in "@rev-cli/utils", continuing
+35 silly lifecycle No script for "version" in "@rev-cli/utils", continuing
+36 silly lifecycle No script for "version" in "@rev-cli/core", continuing
 37 silly lifecycle No script for "version" in "rev-cli", continuing
 38 silly gitAdd [
-38 silly gitAdd   'packages/core/package.json',
 38 silly gitAdd   'packages/utils/package.json',
+38 silly gitAdd   'packages/core/package.json',
 38 silly gitAdd   'lerna.json'
 38 silly gitAdd ]
-39 silly gitCommit v1.0.1
-40 verbose git [ 'commit', '-m', 'v1.0.1' ]
-41 silly gitTag v1.0.1
-42 verbose git [ 'tag', 'v1.0.1', '-m', 'v1.0.1' ]
-43 error Error: Command failed with exit code 128: git tag v1.0.1 -m v1.0.1
-43 error fatal: tag 'v1.0.1' already exists
+39 silly gitCommit v1.0.2
+40 verbose git [ 'commit', '-m', 'v1.0.2' ]
+41 silly gitTag v1.0.2
+42 verbose git [ 'tag', 'v1.0.2', '-m', 'v1.0.2' ]
+43 error Error: Command failed with exit code 128: git tag v1.0.2 -m v1.0.2
+43 error fatal: tag 'v1.0.2' already exists
 43 error     at makeError (C:\Users\34715\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\lib\error.js:60:11)
 43 error     at handlePromise (C:\Users\34715\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:118:26)
 43 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
