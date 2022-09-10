@@ -1,6 +1,6 @@
 {
   "name": "@rev-cli/utils",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "rev-cli/utils provides a CLI interface for rev-cli operations",
   "author": "Rivenaa <347153785@qq.com>",
   "homepage": "",

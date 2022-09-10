@@ -1,6 +1,6 @@
 {
   "name": "@rev-cli/core",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "rev-cli/core is the core content of the rev-cli library",
   "author": "Rivenaa <347153785@qq.com>",
   "homepage": "",
@@ -18,5 +18,6 @@
   ],
   "scripts": {
     "test": "node ./__tests__/core.test.js"
-  }
+  },
+  "gitHead": "71283cd9f0f534916334125c8145c93be4c75f8a"
 }
