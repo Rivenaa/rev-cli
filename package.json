@@ -9,10 +9,11 @@
   "keywords": [],
   "author": "Re_Tteotw",
   "license": "ISC",
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "lerna": "^5.5.0"
+  },
+  "dependencies": {
+    "import-local": "^3.1.0",
+    "npmlog": "^6.0.2"
   }
 }
