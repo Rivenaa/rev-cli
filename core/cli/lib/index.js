@@ -22,7 +22,7 @@ async function core() {
     checkPkgVersion()
     checkRoot()
     checkUserHome()
-    checkInputArgs()
+    // checkInputArgs()
     checkEnv()
     await checkGlobalUpdate()
     registerCommand()
@@ -134,13 +134,20 @@ function registerCommand() {
     .option('-d,--debug', '是否开启调试模式', false)
 
   program.on('option:debug', function () {
-    if (program.debug) {
+    if (program.opts().debug) {
       process.env.LOG_LEVEL = 'verbose'
     } else {
       process.env.LOG_LEVEL = 'info'
     }
     log.level = process.env.LOG_LEVEL
     log.verbose('test')
+  })
+
+  // 未知命令提示
+  program.on('command:*', function (obj) {
+    const availableCommand = program.commands.map(cmd => cmd.name())
+    console.log(colors.red('未知命令：' + obj[0]))
+    console.log(colors.red('可用命令：' + availableCommand.join(',')))
   })
 
   program.parse(process.argv)
